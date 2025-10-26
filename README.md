@@ -1,0 +1,1 @@
+I found out about Latex and turned out that it is a very good way to generate resumes.

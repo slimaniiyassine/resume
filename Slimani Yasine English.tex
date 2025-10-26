@@ -1,0 +1,467 @@
+\documentclass[10pt,a4paper,withhyper]{altacv}
+
+
+\geometry{left=1cm,right=1cm,top=0.7cm,bottom=0.7cm,columnsep=1.2cm,papersize={25cm, 56cm}}
+
+
+
+\usepackage{paracol}
+
+
+
+\iftutex
+  \setmainfont{Lato}
+\else
+  \usepackage[default]{lato}
+\fi
+
+
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+\input{pubs-num}
+
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{SLIMANI YASSINE}
+\tagline{Software Engineer}
+
+\personalinfo{
+  \email{slimaniiyassine@gmail.com}
+  \phone{00 212 6 67 99 17 70}
+  \location{Kenitra, Morocco}
+  \linkedin{yassine-slimani}
+  \xtwitter{@SlimaniYasssine}
+  \github{/slimaniiyassine} 
+\divider
+}
+
+\makecvheader
+
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+	
+\cvsection{Summary}
+
+{Experienced Mobile engineer with 8 years of expertise in native Android development (Kotlin/Java), aiming to deliver user-focused solutions with strong UX development. \newline With an analytical approach and decision-making ability, I have led 5 teams of 5 developers and simultaneously executed 3 large-scale projects delivering high-performance applications in telecommunications, banking, e-commerce and healthcare.\newline Strong background in clean architecture and project delivery in Agile environments. Seeking a challenging role with growth opportunities while contributing to the development of high-quality applications.}
+
+\cvsection{Experience}
+
+\cvevent{Senior Android Developer | Lead Android Developer | App Architect | System Architect }{Bell Canada (via Cnexia)}{Sep 2022 -- Ongoing}{Rabat, Morocco}
+
+\textbf{Promoted to Lead Android Developer.}
+\newline
+\textbf{Promoted to App Architect.}
+\newline
+\textbf{Promoted to System Architect.}
+\newline
+
+\textbf{Missions:}
+\begin{itemize}
+\addtolength{\itemindent}{0.1cm}
+\item Analyzed functional and technical requirements to define application architecture.
+\item Supported technical teams in implementing architectural choices.
+\item Supervised code reviews, automated tests, and pipelines.
+\item Reviewed merge requests for a better quality code.
+\item Led the Android Matrix team, coordinating requirements, development and delivery.
+\item Managed technical designs and solutions architecture.
+\item Conducted client’s demos.
+\item Migrated a full library to Jetpack Compose.
+\item Implemented accessibility features and integrated OneTrust SDK.
+\item Maintained code quality and estimated features.
+\item Improved code coverage to match the new quality gates.
+\item Onboarding and mentoring of new Android developers.
+\item Assured technological watch to anticipate and integrate relevant developments.
+\end{itemize}
+
+\textbf{Technologies:}
+
+\begin{itemize}
+\addtolength{\itemindent}{0.1cm}
+\item Kotlin/MVVM/Compose/Coroutines.
+\item Atlassian Jira, Atlassian Confluence, Github, Jenkins, SonarQube.
+
+\end{itemize}
+
+\textbf{Applications:}
+
+\href{https://play.google.com/store/apps/details?id=ca.bell.selfserve.mybellmobile&hl=en&gl=CA&pli=1}{\textit{Google Play MyBell (Webby Awards Winner)}}.
+\newline
+\href{https://play.google.com/store/apps/details?id=ca.virginmobile.myaccount.virginmobile&hl=en}{\textit{Google Play Virgin Plus My Account}}.
+\newline
+\href{https://play.google.com/store/apps/details?id=ca.luckymobile&hl=en}{\textit{Google Play Lucky Mobile My Account)}}.
+\newline
+\href{https://play.google.com/store/apps/details?id=ca.pcmobile.selfserve.mypcmobile&hl=en}{\textit{Google Play My PC mobile (Prepaid))}}.
+
+\divider
+
+\cvevent{Senior Android Developer | Lead Android Developer }{Nespresso (via Sqli)}{Oct 2018 - Sep 2022}{Rabat, Morocco}
+
+\textbf{Promoted to Lead Android Developer.}
+\newline
+
+\textbf{Missions:}
+\begin{itemize}
+\addtolength{\itemindent}{0.1cm}
+\item Secured performance optimization and security management..
+\item Coordinated with product, design, backend, and QA teams..
+\item Integrated Dagger in a multi-module environment.
+\item Conducted technical feasibility studies and unit test implementations.
+\item Delivered stable and scalable solutions across multiple releases.
+\item Implemented binding adapters to enhance reusability and to impove testability.
+\item Centralized different staging apps using product flavors to have one code base.
+\end{itemize}
+
+\textbf{Technologies:}
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Kotlin, MVVM, MVC, RXjava/RxKotlin, Room Database.
+	\item Atlassian Jira, Atlassian Confluence, Gitlab, Jenkins, SonarQube.
+\end{itemize}
+\textbf{Application:}
+
+\href{https://play.google.com/store/apps/details?id=com.nespresso.activities&hl=en}{\textit{Google Play Nespresso}}.
+
+\divider
+
+\cvevent{Mobile Developer}{Airbus (via Sqli)}{June 2018 - Oct 2018}{Rabat, Morocco}
+
+
+\textbf{Missions:}
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Delivered incremental features through agile development cycles.
+	\item Participated in client requirement analysis and cost estimation.
+\end{itemize}
+
+\textbf{Technologies:}
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Ionic, html, wordpress.
+\end{itemize}
+
+\divider
+
+\cvevent{Mobile Developer}{Merck (via Sqli) }{Dec 2017 - June 2018}{Rabat, Morocco}
+
+\textbf{Missions:}
+
+\begin{itemize}
+\addtolength{\itemindent}{0.1cm}
+\item Participated in client demos, task estimations and bug resolution.
+\item Developed new features and optimized performance.
+
+\end{itemize}
+
+\textbf{Technologies:}
+
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item React native, redux, fastlane.
+	
+\end{itemize}
+\divider
+
+\cvevent{Mobile Developer}{BNP Paribas (via Sqli) }{Sep 2017 - Dec 2017}{Rabat, Morocco}
+\textbf{Missions:}
+
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Worked on feature development and bug fixing.
+\end{itemize}
+
+\textbf{Technologies:}	
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Ionic.
+	
+\end{itemize}
+\divider
+
+\cvevent{Mobile Developer}{Murprotec (via Sqli) }{May 2017 - Sep 2017}{Rabat, Morocco}
+
+\textbf{Missions:}
+
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Conducted feasibility analysis, managed evolution requests, and presented results during client demo sessions.
+\end{itemize}
+
+	\textbf{Technologies:}	
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Android, Java.
+	
+\end{itemize}
+
+\divider
+
+\cvevent{Mobile Developer}{Adrea mutuelle (via Sqli) }{March 2017 - May 2017}{Rabat, Morocco}
+
+\textbf{Missions:}
+
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Focused on bug fixing and application maintenance.
+\end{itemize}
+	\textbf{Technologies:}	
+\begin{itemize}
+	\addtolength{\itemindent}{0.1cm}
+	\item Ionic.
+	\item Jira.
+\end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+%\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+%\wheelchart{1.5cm}{0.5cm}{%
+  %10/13em/accent!30/Sleeping \& dreaming about work,
+  %25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+  %5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+  %20/11em/accent!40/Spending time with family,
+  %5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+  %30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+  %5/8em/accent!20/Baking cupcakes
+%}
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Skills}
+%%\begin{quote}
+%%``If you don't have any shadows, you're not standing in the light.''
+%%\end{quote}
+
+\begin{itemize}
+	\item Leadership and team management.
+	\item Communication and autonomy.
+	\item Management of multiple simultaneous projects.
+	\item Strategic thinking and adaptability.
+	\item Decision-making and multitasking.
+	\item Time and risk management.
+	\item Cross-functional collaboration.
+\end{itemize}
+
+%\cvsection{Most Proud of}
+
+%\cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
+
+%\divider
+
+%\cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
+
+%\divider
+
+%\cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
+
+%\divider
+
+%\cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
+
+%\cvsection{Strengths}
+
+% Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+
+%\cvtag{Hard-working (18/24)}
+%\cvtag{Persuasive}\\
+%\cvtag{Motivator \& Leader}
+
+%\divider\smallskip
+
+%\cvtag{UX}
+%\cvtag{Mobile Devices \& Applications}
+%\cvtag{Product Management \& Marketing}
+\cvsection{Technical stack}
+
+
+\textbf{Kotlin Multiplatform/KMP}
+
+\begin{itemize}
+	\item Compose Multiplatform/Android/iOS/Desktop.
+	\item Kotlin Multiplatform.
+\end{itemize}
+\divider
+
+\textbf{Android}
+
+\begin{itemize}
+	\item Android Studio.
+	\item Android Architecture Components/JetPack.
+	\item Dagger 2/RxJava/RxKotlin/Retrofit/OkHttp.
+	\item Kotlin Coroutines.
+	\item Jetpack Compose/ViewBinding/DataBinding.
+	\item Android Accessibility.
+\end{itemize}
+\divider
+
+\textbf{Hybrid technologies}
+
+\begin{itemize}
+	\item Ionic.
+	\item React Native.
+\end{itemize}
+\divider
+
+\textbf{Software Architecture}
+
+\begin{itemize}
+	\item Clean Architecture.
+	\item MVVM/MVI/MVP.
+\end{itemize}
+\divider
+
+\textbf{Principle}
+
+\begin{itemize}
+	\item Clean Code/SOLID.
+	\item Object Oriented Programming.
+	\item Reactive Programming.
+	\item Isolation/Reproducibility.
+\end{itemize}
+\divider
+
+\textbf{Design Patterns}
+
+\begin{itemize}
+	\item Singleton/Builder/Factory.
+	\item Delegate/Visitor/Proxy/Facade/Adapter.
+	\item Chain of responsibility/Strategy.
+\end{itemize}
+\divider
+
+\textbf{Continuous Integration/Deployment}
+
+\begin{itemize}
+	\item Jenkins/GitLab CI/Fastlane/Docker/SonarQube.
+	\item Git.
+\end{itemize}
+\divider
+
+\textbf{Android test}
+
+\begin{itemize}
+	\item Junit/Mockito/Espresso/JaCoCo/Robolectric/Leak Canary.
+\end{itemize}
+\divider
+
+\textbf{Android Build System}
+
+\begin{itemize}
+	\item ProGuard/DexGuard/R8.
+	\item Gradle/Maven.
+	\item adb/sdkmanager/avdmanager.
+\end{itemize}
+\divider
+
+\textbf{Programming Language}
+
+\begin{itemize}
+	\item Kotlin/Java.
+	\item Javascript/HTML.
+\end{itemize}
+\divider
+
+\textbf{Analytics/Monitoring}
+
+\begin{itemize}
+	\item Firebase/Crashlytics/Adobe Analytics/Adobe Journey Optimizer.
+\end{itemize}
+\divider
+
+\textbf{Database}
+
+\begin{itemize}
+	\item Room/SQLite/Oracle.
+\end{itemize}
+\divider
+
+\textbf{Tools}
+
+\begin{itemize}
+	\item Jira/Confluence/Postman/Charles Proxy.
+\end{itemize}
+\divider
+
+\textbf{AI}
+
+\begin{itemize}
+	\item MCP servers.
+	\item Github Copilot.
+	\item Gemini nano.
+	\item LoRA training.
+	\item Mediapipe.
+		\item Googel colab.
+	\item hugging face/gemma.
+\end{itemize}
+
+
+
+\cvsection{Languages}
+
+\cvskill{English}{4.5}
+\divider
+
+\cvskill{French}{4}
+\divider
+
+\cvskill{Arabic}{5}
+
+
+\cvsection{CERTIFICATIONS}
+
+\begin{itemize}
+\item \href{https://www.scrum.org/user/418540}{\textit{Professional Scrum Developer.}}
+\item \href{https://community.scaledagile.com/apex/PrintAchievement?aid=a0t6T00000O8QGyQAN&aaid=a0rQo00001ie1R1IAI}{\textit{SAFe 6 Agilist.}}
+\end{itemize}
+\cvsection{Education}
+
+\cvevent{Master’s Degree\ in new technologies and Project Management.}{University of Nice Sophia Antipolis – France}{2016 - 2017}{}
+
+\cvevent{Engineering Degree\ in Computer Science.}{Moroccan School of Engineering Sciences (EMSI)}{2012 - 2017}{}
+
+
+\cvsection{Article}
+
+\href{https://medium.com/@slimaniiyassine/a-developers-guide-to-using-gemini-with-an-mcp-server-05878c418097}{\textit{A Developer’s Guide to Using Gemini with an MCP Server}}.
+
+%\divider
+
+%\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
+
+
+\end{paracol}
+
+\end{document}
