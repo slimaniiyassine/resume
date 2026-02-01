@@ -1,7 +1,7 @@
 \documentclass[10pt,a4paper,withhyper]{altacv}
 
 
-\geometry{left=1cm,right=1cm,top=0.7cm,bottom=0.7cm,columnsep=1.2cm,papersize={25cm, 56cm}}
+\geometry{left=1cm,right=1cm,top=0.7cm,bottom=0.7cm,columnsep=1.2cm,papersize={25cm, 57cm}}
 
 
 
@@ -27,15 +27,6 @@
 
 \renewcommand{\cvItemMarker}{{\small\textbullet}}
 \renewcommand{\cvRatingMarker}{\faCircle}
-
-
-% If your CV/résumé is in a language other than English,
-% then you probably want to change these so that when you
-% copy-paste from the PDF or run pdftotext, the location
-% and date marker icons for \cvevent will paste as correct
-% translations. For example Spanish:
-% \renewcommand{\locationname}{Ubicación}
-% \renewcommand{\datename}{Fecha}
 
 
 \input{pubs-num}
@@ -83,7 +74,10 @@
 \textbf{Missions:}
 \begin{itemize}
 \addtolength{\itemindent}{0.1cm}
+\item Train the teams to use github copilot.
+\item Intreduce MCP servers to the teams so that they can automate daily tasks.
 \item Analyzed functional and technical requirements to define application architecture.
+\item Added a chatbot that automates orders as a poc using MediaPipe, Lora training, and google colab.
 \item Supported technical teams in implementing architectural choices.
 \item Supervised code reviews, automated tests, and pipelines.
 \item Reviewed merge requests for a better quality code.
@@ -235,35 +229,11 @@
 	\item Jira.
 \end{itemize}
 
-%\cvsection{A Day of My Life}
 
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-% Some ad-hoc tweaking to adjust the labels so that they don't overlap
-%\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-%\wheelchart{1.5cm}{0.5cm}{%
-  %10/13em/accent!30/Sleeping \& dreaming about work,
-  %25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-  %5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-  %20/11em/accent!40/Spending time with family,
-  %5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-  %30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-  %5/8em/accent!20/Baking cupcakes
-%}
-
-% use ONLY \newpage if you want to force a page break for
-% ONLY the currentc column
-
-
-%% Switch to the right column. This will now automatically move to the second
-%% page if the content is too long.
 \switchcolumn
 
 \cvsection{Skills}
-%%\begin{quote}
-%%``If you don't have any shadows, you're not standing in the light.''
-%%\end{quote}
+
 
 \begin{itemize}
 	\item Leadership and team management.
@@ -275,35 +245,6 @@
 	\item Cross-functional collaboration.
 \end{itemize}
 
-%\cvsection{Most Proud of}
-
-%\cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
-
-%\divider
-
-%\cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
-
-%\divider
-
-%\cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
-
-%\divider
-
-%\cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
-
-%\cvsection{Strengths}
-
-% Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
-
-%\cvtag{Hard-working (18/24)}
-%\cvtag{Persuasive}\\
-%\cvtag{Motivator \& Leader}
-
-%\divider\smallskip
-
-%\cvtag{UX}
-%\cvtag{Mobile Devices \& Applications}
-%\cvtag{Product Management \& Marketing}
 \cvsection{Technical stack}
 
 
@@ -322,6 +263,7 @@
 	\item Android Architecture Components/JetPack.
 	\item Dagger 2/RxJava/RxKotlin/Retrofit/OkHttp.
 	\item Kotlin Coroutines.
+	\item Android Views and ViewGroups.
 	\item Jetpack Compose/ViewBinding/DataBinding.
 	\item Android Accessibility.
 \end{itemize}
@@ -382,7 +324,7 @@
 \begin{itemize}
 	\item ProGuard/DexGuard/R8.
 	\item Gradle/Maven.
-	\item adb/sdkmanager/avdmanager.
+	\item ADB/Sdkmanager/Avdmanager.
 \end{itemize}
 \divider
 
@@ -401,17 +343,18 @@
 \end{itemize}
 \divider
 
-\textbf{Database}
+\textbf{Database/APIs}
 
 \begin{itemize}
 	\item Room/SQLite/Oracle.
+	\item REST/GraphQL.
 \end{itemize}
 \divider
 
 \textbf{Tools}
 
 \begin{itemize}
-	\item Jira/Confluence/Postman/Charles Proxy.
+	\item Jira/Confluence/Postman/Charles Proxy/LaunchDarkly.
 \end{itemize}
 \divider
 
@@ -424,7 +367,7 @@
 	\item LoRA training.
 	\item Mediapipe.
 		\item Googel colab.
-	\item hugging face/gemma.
+	\item Hugging face/gemma.
 \end{itemize}
 
 
@@ -453,13 +396,21 @@
 \cvevent{Engineering Degree\ in Computer Science.}{Moroccan School of Engineering Sciences (EMSI)}{2012 - 2017}{}
 
 
-\cvsection{Article}
+\cvsection{Articles \& Repositories}
 
-\href{https://medium.com/@slimaniiyassine/a-developers-guide-to-using-gemini-with-an-mcp-server-05878c418097}{\textit{A Developer’s Guide to Using Gemini with an MCP Server}}.
 
-%\divider
+\begin{itemize}
 
-%\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
+	\item 	\href{https://medium.com/@slimaniiyassine/why-coroutines-feel-safe-but-arent-582a31ebe0d3}{\textit{Why Coroutines Feel “Safe” (But Aren’t)}}.
+		
+		\item	\href{https://github.com/slimaniiyassine/Medium-Article-Shared-State-Coroutine-Issue}{\textit{Shared State Coroutine Issue App
+		}}.
+		
+	\item	\href{https://medium.com/@slimaniiyassine/a-developers-guide-to-using-gemini-with-an-mcp-server-05878c418097}{\textit{A Developer’s Guide to Using Gemini with an MCP Server}}.
+	
+	
+\end{itemize}
+
 
 
 \end{paracol}
